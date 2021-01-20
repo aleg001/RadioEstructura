@@ -1,7 +1,24 @@
 import java.util.Scanner;
 
-public class Vista {
+/***************************************************************
+* FuncionRadio.java
+* Autores: Marco Jurado y Alejandro Gómez
+* Universidad del Valle de Guatemala
+*
+* Fecha creacion: 18/01/21
+* Ultima modificacion: 21/01/21
+*
+* 
+***************************************************************/
 
+public class FuncionRadio {
+    
+
+    public Radio = new Radio(); //Instancia de Radio
+
+
+
+    //////////////////////////////////////////////////////////////// Vista ////////////////////////////////////////////////////////////////////////
     Scanner scan = new Scanner(System.in);
     //------------------------------------------------------ PROGRA DEFENSIVA ------------------------------------------------------
     /**
@@ -68,7 +85,9 @@ public class Vista {
         return EmisoraNum;
     }
 
-    public int SeleccionarEmisora()
+    public int SeleccionarEmisora(){
+        
+    }
 
     /**
      * Método para validar cualquier número ingresado.
@@ -84,8 +103,7 @@ public class Vista {
         System.out.println("Que emisora desea sintonizar?");
         System.out.println("1) AM"+"\n2) FM");
 
-        Scanner scan = new Scanner(System.in);
-        int ingreso = scan.nextLine();
+        String ingreso = scan.nextLine();
 
         while(Valide == true){ //Validar el ingreso del usuario.
             System.out.println("Ingrese numero de opcion: ");
@@ -99,6 +117,11 @@ public class Vista {
           }
           return retorno; //devuelve la seleccion
    
+    }
+    
+    public void BotonesVisual(){
+        System.out.println("Elige el boton de radio a seleccionar");
+        System.out.println("1 2 3 4 5 6 7 8 9 10 11 12");
     }
 
     /**
@@ -132,7 +155,45 @@ public class Vista {
           else{}
         }
         return opc; //devuelve la seleccion
-      }
-    
+      }}
+
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+    public static void main (String[] args) {
+
+        while(salir == false){
+            //Ciclo principal donde se ejecuta el programa
+
+        int opcionmenu = MenuGeneral(); //Selección del usuario
+        if(opcionmenu == 1){
+                //Encender radio
+                Radio.encenderApagar();
+                
+        }
+        else if(opcionmenu == 2){
+            // Cambiar Emisora
+
+        }else if(opcionmenu == 3){
+            //Opcion para guardar emisora
+
+        }else if(opcionmenu == 4){
+            //Seleccionar emisora en un boton
+            BotonesVisual();
+            int EmisoraNum = scan.nextLine();
+            
+        }else if(opcionmenu == 5){
+            
+            //Opcion para apagar radio
+        }else if(opcionmenu == 6){
+
+
+
+
+
+
+
+
+
+        
+    }
