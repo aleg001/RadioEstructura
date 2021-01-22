@@ -1,8 +1,8 @@
 public interface Interface {
     
     public boolean encenderApagar();
-    public boolean amFM();
+    public boolean amFm();
     public String guardar(int btn);
     public String seleccionar(int btn);
-    public Double avanzar();
+    public double avanzar();
 }

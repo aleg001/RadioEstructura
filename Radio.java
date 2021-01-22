@@ -119,7 +119,7 @@ public class Radio implements Interface {
      * @return boolean
      * @author sección 30 Curso EDS
      **/
-    public boolean amFM() {
+    public boolean amFm() {
         boolean retorno = false;
         if (ONOFF == false) {
             retorno = false;
@@ -798,8 +798,8 @@ public class Radio implements Interface {
      * @return Double
      * @author sección 30 Curso EDS
      **/
-    public Double avanzar() {
-        Double retornoavanzar = 0.0;
+    public double avanzar() {
+        double retornoavanzar = 0.0;
         if (ONOFF == false) {
             System.out.println("La radio esta apagada.");
 

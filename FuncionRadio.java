@@ -54,7 +54,8 @@ public class FuncionRadio {
 
       } else if (opcionmenu == 2) {
         // Cambiar Emisora
-        boolean cambioAMFM = R.amFM();
+        boolean cambioAMFM = R.amFm();
+        //Cambiar
         if (cambioAMFM == false) {
           System.out.println("La radio esta apagada");
         } else {
